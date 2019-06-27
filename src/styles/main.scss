@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Roboto:100i,300,300i,400,400i,500,500i,700,700i&subset=latin-ext");
+
+
+body {
+    background: rgb(119,55,175);
+    background: linear-gradient(90deg, rgba(119,55,175,1) 0%, rgba(97,84,174,1) 50%, rgba(63,121,174,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#app {
+    padding: 2rem 0;
+    font-family: "Roboto", serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    & > * {
+        padding-bottom: 2rem;
+    }
+}
+
+[role="button"] {
+    cursor: pointer;
+}

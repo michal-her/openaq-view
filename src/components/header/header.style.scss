@@ -1,0 +1,10 @@
+.component--header {
+
+  @media (max-width: 992px) {
+    font-size: 14pt;
+  }
+  h1 {
+    font-weight: bolder;
+    font-family: "Merriweather", sans-serif;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../styles/colors";
+
+.component--measurments {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+.latest-measurment {
+    margin: 1rem;
+    font-weight: normal;
+    max-width: 420px;
+    background: $color-white-000;
+    color: $color-black-700;
+    padding: 2rem;
+    display: flex;
+    flex-basis: 100%;
+    line-height: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+
+    .place-name {
+        font-size: 25px;
+        color: $color-purple;
+        font-weight:bold; 
+    }
+
+    .values {
+        font-weight: bold;
+    }
+    .value {
+        text-transform: uppercase;
+    }
+
+    .duration {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: $color-black-700;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .close:active {
+      transform: scale(0.9);
+  }
+}
