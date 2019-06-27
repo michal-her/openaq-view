@@ -1,8 +1,11 @@
 import React from 'react'
 
+type Translation = {
+    [key:string]:string|Translation
+}
 
 export type AirQualityContextType = {
-    texts: {[key:string]:string};
+    texts: Translation;
     selectedCities:Array<string>;
     updateCities: (cities:Array<string>) => void;
 }
@@ -11,7 +14,10 @@ export const texts = {
     intro: "Compare the air quality between cities in the UK.",
     selectCity:"Select cities to compare using the search tool below.",
     selectCityPlaceholder:"Enter city name...",
-    countryName:"United Kingdom",
+    countryName:{
+      "GB":  "United Kingdom",
+      "PL":"Poland",
+    },
     values:"Values"
 }
 export const initialState:AirQualityContextType = {

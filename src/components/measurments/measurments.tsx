@@ -4,6 +4,7 @@ import AirQualityContext from "../../context/AirQualityContext";
 import { LatestData, Measurement } from "../../model/MeasurmentsModel";
 import { FetchUtils } from "../../utils/FetchUtils";
 import  {humanizer}  from "humanize-duration";
+import { string } from "prop-types";
 
 export function MeasurementsComponent():JSX.Element{
     const {selectedCities,updateCities} = useContext(AirQualityContext);
@@ -49,12 +50,12 @@ function LastMeasurmentEntry(props:LastMeasurmentEntryProps):JSX.Element {
     function removeCity(e:MouseEvent<HTMLDivElement>) {
         props.removeCity(props.data.city);
     }
-
+    const countryName = texts.countryName as {[key:string]:string};
     return (<div className="latest-measurment" >
         <div className="close" role="button" onClick={removeCity}/>
         <span className="duration">Updated {calculateLastUpdate(props.data.measurements)} ago</span>
         <span className="place-name">{props.data.location}</span>
-        <span className="city-name">{`in ${props.data.city}, ${texts.countryName}`}</span>
+        <span className="city-name">{`in ${props.data.city}, ${countryName[props.data.country]}`}</span>
         <MeasurmentsResults measurments={props.data.measurements} />
     </div>);
 }
