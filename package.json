@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^3.3.13",
-    "@types/lodash": "^4.14.134",
+    "@types/lodash": ">=4.14.134",
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^3.0.0",
     "gh-pages": "^2.0.1",
@@ -26,7 +26,7 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1",
     "karma-webpack": "^4.0.2",
-    "lodash": "^4.17.13",
+    "lodash": ">=4.17.13",
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
