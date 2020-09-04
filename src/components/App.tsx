@@ -3,6 +3,7 @@ import AirQualityContext, { AirQualityContextType, texts } from "../context/AirQ
 import { Header } from "./header/Header";
 import { CitySelector } from "./city-selector/CitySelector";
 import { MeasurementsComponent } from "./measurments/measurments";
+import { ErrorBoundary } from "./errors/ErrorBoundary";
 
 function updateCitiesDecorator(updateCities:(cities:Array<string>)=>void): (cities:Array<string>)=>void {
     return (cities:Array<string>) => {
@@ -25,7 +26,9 @@ export function App():JSX.Element {
     };
     return (
         <AirQualityContext.Provider value={initialState}>
-        <MainComponent/>
+        <ErrorBoundary>
+            <MainComponent/>
+        </ErrorBoundary>
         </AirQualityContext.Provider>)
     ;
 }

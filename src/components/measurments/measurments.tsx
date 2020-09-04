@@ -22,6 +22,7 @@ export function MeasurementsComponent():JSX.Element{
                         return arr;
                     }
                 })
+            .then(ld => ld.filter(i => !!i))
             .then(setLatestData).catch(()=>{setLatestData([] as LatestData[])});
     } 
    

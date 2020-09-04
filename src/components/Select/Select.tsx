@@ -68,12 +68,12 @@ class Select extends Component<SelectProps, State> {
         };
     }
 
-    componentWillReceiveProps(nextProp: SelectProps) {
+   /* componentWillReceiveProps(nextProp: SelectProps) {
         this.setState({
             selected: nextProp.selected || nextProp.data.selected || this._getSelected(),
             showGroups: nextProp.showGroups || false,
         });
-    }
+    }*/
 
     render() {
         const activeClass: string = this.state.isOpen ? "active" : "";
