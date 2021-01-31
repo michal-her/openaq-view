@@ -30,9 +30,9 @@ export type SelectData = {
 };
 
 export enum Keys {
-    KEY_UP = 38,
-    KEY_DOWN = 40,
-    ENTER = 13,
+    KEY_UP = 'ArrowUp',
+    KEY_DOWN = 'ArrowUp',
+    ENTER = 'Enter',
 }
 
 interface SelectProps {
@@ -188,7 +188,7 @@ class Select extends Component<SelectProps, State> {
     };
 
     onKeyPress = (ev: KeyboardEvent<HTMLDivElement>) => {
-        if (ev.keyCode !== Keys.KEY_UP && ev.keyCode !== Keys.KEY_DOWN && ev.keyCode !== Keys.ENTER) {
+        if (ev.key !== Keys.KEY_UP && ev.key !== Keys.KEY_DOWN && ev.key !== Keys.ENTER) {
             return;
         }
 

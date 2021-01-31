@@ -3,12 +3,13 @@ import  * as  QS  from 'query-string';
 import { LatestResponse } from '../model/MeasurmentsModel';
 
 export class FetchUtils {
-    static COUNTRY_CODE="GB"
+    static COUNTRY_CODE="DE"
     static baseUrl:String = "https://api.openaq.org/v1"
     
     static async getCities():Promise<CitiesResponse> {
         const query=QS.stringify({country:FetchUtils.COUNTRY_CODE, limit:300});
-        const r = await fetch(`${FetchUtils.baseUrl}/cities?${query}`);
+        const r = await fetch(`${FetchUtils.baseUrl}/cities?${query}`
+        );
          return await r.json();
     }
 

@@ -75,11 +75,11 @@ class SelectOptions extends Component<SelectOptionsProps, State> {
         ):null;
     }
 
-    public usedArrowKeys(keyCode: number): void {
+    public usedArrowKeys(key: string): void {
         const currentIndex: number = this._findOptionIndex(this.state.selected);
         let highlightedIndex: number = this._findOptionIndex(this.state.highlighted);
 
-        if (keyCode === Direction.Up) {
+        if (key=== Keys.KEY_UP) {
             highlightedIndex =
                 highlightedIndex - 1 >= 0 ? highlightedIndex - 1 : this.flattenOptions.length - 1;
         } else {
@@ -87,7 +87,7 @@ class SelectOptions extends Component<SelectOptionsProps, State> {
                 highlightedIndex + 1 <= this.flattenOptions.length - 1 ? highlightedIndex + 1 : 0;
         }
 
-        if (keyCode === Keys.ENTER) {
+        if (key=== Keys.ENTER) {
             this.setState({
                 selected: this.state.highlighted,
             });

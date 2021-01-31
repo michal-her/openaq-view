@@ -51,7 +51,7 @@ class SelectSearch extends Component<SelectSearchProps, State> {
     }
 
     _onKeyUp = (ev: KeyboardEvent<HTMLInputElement>) => {
-        if (ev.keyCode === Keys.KEY_DOWN || ev.keyCode === Keys.KEY_UP) {
+        if (ev.key === Keys.KEY_DOWN || ev.key === Keys.KEY_UP) {
             return;
         }
 
