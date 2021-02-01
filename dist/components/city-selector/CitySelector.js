@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from "../../../_snowpack/pkg/react.js";
+import React, {useContext, useState, useEffect} from "../../../snowpack/pkg/react.js";
 import "./CitySelector.style.css.proxy.js";
 import AirQualityContext, {texts} from "../../context/AirQualityContext.js";
 import {Select} from "../Select/Select.js";

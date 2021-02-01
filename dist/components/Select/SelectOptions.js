@@ -1,5 +1,5 @@
-import * as React from "../../../_snowpack/pkg/react.js";
-import {Component} from "../../../_snowpack/pkg/react.js";
+import * as React from "../../../snowpack/pkg/react.js";
+import {Component} from "../../../snowpack/pkg/react.js";
 import {Keys} from "./Select.js";
 var Direction;
 (function(Direction2) {

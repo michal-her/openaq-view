@@ -1,4 +1,4 @@
-import React, {useContext} from "../../../_snowpack/pkg/react.js";
+import React, {useContext} from "../../../snowpack/pkg/react.js";
 import AirQualityContext from "../../context/AirQualityContext.js";
 import "./header.style.css.proxy.js";
 export function Header() {

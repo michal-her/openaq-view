@@ -1,4 +1,4 @@
-import React from "../../../_snowpack/pkg/react.js";
+import React from "../../../snowpack/pkg/react.js";
 export class ErrorBoundary extends React.Component {
   constructor() {
     super(...arguments);

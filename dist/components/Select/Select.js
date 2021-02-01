@@ -1,5 +1,5 @@
-import * as React from "../../../_snowpack/pkg/react.js";
-import {Component} from "../../../_snowpack/pkg/react.js";
+import * as React from "../../../snowpack/pkg/react.js";
+import {Component} from "../../../snowpack/pkg/react.js";
 import {SelectSearch} from "./SelectSearch.js";
 import {SelectOptions} from "./SelectOptions.js";
 export var Keys;

@@ -1,7 +1,7 @@
-import * as React from "../../../_snowpack/pkg/react.js";
-import {Component} from "../../../_snowpack/pkg/react.js";
+import * as React from "../../../snowpack/pkg/react.js";
+import {Component} from "../../../snowpack/pkg/react.js";
 import {Keys} from "./Select.js";
-import debounce from "../../../_snowpack/pkg/lodash/debounce.js";
+import debounce from "../../../snowpack/pkg/lodash/debounce.js";
 class SelectSearch extends Component {
   constructor(props) {
     super(props);
