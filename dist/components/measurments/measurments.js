@@ -1,8 +1,8 @@
-import React, {useContext, useState, useEffect} from "../../../snowpack/pkg/react.js";
+import React, {useContext, useState, useEffect} from "../../../_snowpack/pkg/react.js";
 import "./measurments.style.css.proxy.js";
 import AirQualityContext from "../../context/AirQualityContext.js";
 import {FetchUtils} from "../../utils/FetchUtils.js";
-import {humanizer} from "../../../snowpack/pkg/humanize-duration.js";
+import {humanizer} from "../../../_snowpack/pkg/humanize-duration.js";
 export function MeasurementsComponent() {
   const {selectedCities, updateCities} = useContext(AirQualityContext);
   const [latestData, setLatestData] = useState([]);

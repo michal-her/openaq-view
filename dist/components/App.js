@@ -1,4 +1,4 @@
-import React, {useState} from "../../snowpack/pkg/react.js";
+import React, {useState} from "../../_snowpack/pkg/react.js";
 import AirQualityContext, {texts} from "../context/AirQualityContext.js";
 import {Header} from "./header/Header.js";
 import {CitySelector} from "./city-selector/CitySelector.js";

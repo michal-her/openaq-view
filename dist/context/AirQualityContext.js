@@ -1,4 +1,4 @@
-import React from "../../snowpack/pkg/react.js";
+import React from "../../_snowpack/pkg/react.js";
 export const texts = {
   headline: "Compare your Air",
   intro: "Compare the air quality between cities in the UK.",
