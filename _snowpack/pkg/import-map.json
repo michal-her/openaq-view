@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "humanize-duration": "./humanize-duration.js",
+    "lodash/debounce": "./lodash/debounce.js",
+    "react": "./react.js",
+    "react-dom": "./react-dom.js"
+  }
+}

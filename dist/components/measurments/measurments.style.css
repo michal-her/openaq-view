@@ -1,0 +1,64 @@
+.component--measurments {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.component--measurments .latest-measurment {
+  margin: 1rem;
+  font-weight: normal;
+  max-width: 420px;
+  background: #ffffff;
+  color: #333333;
+  padding: 2rem;
+  display: flex;
+  flex-basis: 100%;
+  line-height: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.component--measurments .latest-measurment .place-name {
+  font-size: 25px;
+  color: #631ea0;
+  font-weight: bold;
+}
+.component--measurments .latest-measurment .values {
+  font-weight: bold;
+}
+.component--measurments .latest-measurment .value {
+  text-transform: uppercase;
+}
+.component--measurments .latest-measurment .duration {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.component--measurments .close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+.component--measurments .close:hover {
+  opacity: 1;
+}
+.component--measurments .close:before, .component--measurments .close:after {
+  position: absolute;
+  left: 15px;
+  top: -20px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: #333333;
+}
+.component--measurments .close:before {
+  transform: rotate(45deg);
+}
+.component--measurments .close:after {
+  transform: rotate(-45deg);
+}
+.component--measurments .close:active {
+  transform: scale(0.9);
+}
