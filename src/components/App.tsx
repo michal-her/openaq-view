@@ -13,7 +13,7 @@ function updateCitiesDecorator(updateCities:(cities:Array<string>)=>void): (citi
 }
 
 function initCities(){
-    const cities:string[] = JSON.parse(window.localStorage.getItem("cities")) || [] 
+    const cities:string[] = JSON.parse(window.localStorage.getItem("cities") ?? "[]") || [] 
     return cities;
 }
 
@@ -39,6 +39,9 @@ function MainComponent():JSX.Element {
     <Header/>
     <CitySelector/>
     <MeasurementsComponent/>
+  <footer>
+    <span>The data from the page <a href="https://www.openaq.org" >openaq.org</a></span>
+  </footer>
     </>
 }
 

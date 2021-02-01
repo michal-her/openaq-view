@@ -1,4 +1,4 @@
-import { Meta } from "./MeasurmentsModel";
+import type { Meta } from "./MeasurmentsModel";
 
 export type CitiesResponse = {
     meta:Meta;

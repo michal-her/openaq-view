@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Roboto:100i,300,300i,400,400i,500,500i,700,700i&subset=latin-ext");
 
+:root {
+    --main-font-color: white;
+}
 
 body {
     background: rgb(119,55,175);
@@ -14,7 +17,7 @@ body {
     padding: 2rem 0;
     font-family: "Roboto", serif;
     font-weight: lighter;
-    color: white;
+    color: var(--main-font-color,white);
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -23,6 +26,12 @@ body {
     & > * {
         padding-bottom: 2rem;
     }
+}
+
+footer a,footer a:visited {
+    color: var(--main-font-color, white);
+    text-decoration: none;
+    font-weight: 400;
 }
 
 [role="button"] {

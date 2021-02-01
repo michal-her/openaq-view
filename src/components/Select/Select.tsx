@@ -2,7 +2,7 @@ import * as React from "react";
 import { Component } from "react";
 import { SelectSearch, SelectSearchProps } from "./SelectSearch";
 import { SelectOptions, SelectOptionsProps } from "./SelectOptions";
-import { KeyboardEvent } from "react";
+import type { KeyboardEvent } from "react";
 
 interface State {
     isOpen: boolean;
